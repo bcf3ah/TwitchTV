@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Twitch TV</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+		<div class="container">
+	  <div class="row">
+	    <div class="col s8 offset-s2">
+	      <ul class="collection">
+	        <li class="collection-item">
+	          <h4 class='center-align'><img src="http://fontmeme.com/permalink/170525/76e1353218f70571de7bc35188852c8d.png" alt="" /></h4>
+	          <form>
+	            <div class="input-field">
+	              <input id="search" type="search">
+	              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+
+	            </div>
+	          </form>
+	          <div class="row">
+	            <div class="col s12">
+	              <ul class="tabs tabs-fixed-width">
+	                <li class="tab"><a href="#all" onclick="Materialize.showStaggeredList('#all')">All</a></li>
+	                <li class="tab"><a href="#online" onclick="Materialize.showStaggeredList('#online')">Online</a></li>
+	                <li class="tab"><a href="#offline" onclick="Materialize.showStaggeredList('#offline')">Offline</a></li>
+	              </ul>
+	            </div>
+	          </div>
+	        </li>
+	        <div id="all">
+
+	        </div>
+	        <div id="online">
+
+	        </div>
+	        <div id="offline">
+
+	        </div>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="index.js"></script>
+  </body>
+</html>
